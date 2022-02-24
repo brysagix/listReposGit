@@ -17,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <HomePage />
+            <FooterComponent />
           </Route>
         </Switch>
 

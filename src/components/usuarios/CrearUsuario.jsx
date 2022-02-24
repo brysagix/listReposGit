@@ -1,5 +1,4 @@
 import React, { useState, useEffect,Link} from "react";
-import {Redirect} from "react-router-dom";
 import {
   Button,
   Container,
@@ -19,6 +18,7 @@ function CrearUsuario() {
   return (
     <Container>
 
+      <Form>
         <br />
  
         <img
@@ -55,18 +55,20 @@ function CrearUsuario() {
    
       <br />
       <FormGroup>
-      <Button color="primary" onClick={() => ingresar()}>
+      <Button type="submit" color="primary" onClick={() => ingresar()}>
         Iniciar sesión
       </Button>{" "}
       </FormGroup>
 
       <br />
       <FormGroup>
-      <Button variant="success" onClick={() => crearNuevoUsuario()}>
+      <Button type="submit" variant="success" onClick={() => crearNuevoUsuario()} >
         Crear nuevo usuario
       </Button>{" "}
       </FormGroup>
-      
+
+     </Form>
+
     </Container>
   );
 
@@ -88,7 +90,7 @@ function CrearUsuario() {
       localStorage.setItem("authorized","true");}
     else{
       alert("No estas autorizado");
-      localStorage.setItem("authorized","false");
+      localStorage.setItem("authorized", "false");
     }
   }
 

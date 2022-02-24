@@ -14,7 +14,7 @@ return(
       <Carousel>
       <Carousel.Item>
         <img
-          width={600} height={550} 
+          width={600} height={555} 
           className="d-block w-100"
           src={require("../../assets/images/git1.jpg").default}
           alt="First slide"
@@ -23,7 +23,7 @@ return(
 
       <Carousel.Item>
         <img
-          width={600} height={550} 
+          width={600} height={555} 
           className="d-block w-100"
           src={require("../../assets/images/git2.jpg").default}
           alt="Second slide"
