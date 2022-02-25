@@ -47,7 +47,7 @@ function CrearUsuario() {
         <br />
         <br />
         <FormGroup>
-          <label>Nombre de Usuario:</label>
+          <label>Nombre de Usuario Git:</label>
           <input
             className="form-control"
             name="personaje"
