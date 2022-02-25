@@ -9,7 +9,9 @@ ReactDOM.render(
   <Auth0Provider
     domain="dev-grrrr64v.us.auth0.com"
     clientId="wEoR7eOnx58OS2E7JjumtxxUZFkHYqaz"
-    redirectUri={"http://localhost:3000/proyectos"} //Este toma para ir a la url que le dejamos en la plataforma localhost etc
+    //redirectUri={"http://localhost:3000/proyectos"} //Este toma para ir a la url que le dejamos en la plataforma localhost etc
+    redirectUri={"https://admin-git-repo-frontend.herokuapp.com/proyectos"} //Este toma para ir a la url que le dejamos en la plataforma localhost etc
+
   >
     <React.StrictMode>
       <App />
