@@ -199,8 +199,8 @@ function Proyectos() {
         className="form-control"
         name="personaje"
         type="text"
-        //onChange={(e) => setUserRepo(e.target.value)}
-        placeholder={usuario}
+        onChange={(e) => setUserRepo(e.target.value)}
+        placeholder={userRepo}
       />
 
       <br></br>
