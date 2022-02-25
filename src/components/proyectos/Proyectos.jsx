@@ -6,6 +6,8 @@ import logoFavorito from '../../assets/images/star2.png'
 
 function Proyectos() {
 
+  //const heroku= "http://localhost:3001"
+  const heroku = "https://admin-git-repo-backend.herokuapp.com";
   const usuario= localStorage.getItem("user");
 
   const [nombreRepo, setNombreRepo] = useState([]);
@@ -22,7 +24,7 @@ function Proyectos() {
             })
         };
 
-        fetch("http://localhost:3001/add-favorito", requestOptions)
+        fetch(heroku +"/add-favorito", requestOptions)
             .then(response => response.json())
             //.then(data => setRepoFavorito(data.nombreRepo));
     } 
@@ -44,7 +46,7 @@ function Proyectos() {
             })
         };
 
-        fetch("http://localhost:3001/add-Nofavorito", requestOptions)
+        fetch(heroku +"/add-Nofavorito", requestOptions)
             .then(response => response.json())
     } 
     
@@ -65,7 +67,7 @@ function Proyectos() {
             })
         };
 
-        fetch("http://localhost:3001/delete-favorito", requestOptions)
+        fetch(heroku +"/delete-favorito", requestOptions)
             .then(response => response.json())
     } 
     
@@ -95,7 +97,7 @@ function Proyectos() {
 
   const getTodosRepos = async () => {
     try {
-      const response = await fetch("http://localhost:3001/get-Todos"); //fetch es el que consume;
+      const response = await fetch(heroku +"/get-Todos"); //fetch es el que consume;
       const jsonResponse = await response.json();
       const responseProducts = jsonResponse.data;
 
@@ -141,7 +143,7 @@ function Proyectos() {
 
   const getReposFavoritos = async () => {
     try {
-      const response = await fetch("http://localhost:3001/get-favoritos"); //fetch es el que consume;
+      const response = await fetch(heroku +"/get-favoritos"); //fetch es el que consume;
       const jsonResponse = await response.json();
       const responseProducts = jsonResponse.data;
 

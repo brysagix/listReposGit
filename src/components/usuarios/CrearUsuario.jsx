@@ -95,7 +95,8 @@ function CrearUsuario() {
           <Button
             variant="outline-danger"
             onClick={() =>
-              loginWithRedirect({ returnTo: "http://localhost:3000/proyectos" })
+              //loginWithRedirect({ returnTo: "http://localhost:3000/proyectos" })
+              loginWithRedirect({ returnTo: "https://admin-git-repo-frontend.herokuapp.com/proyectos" })
             }
           >
             Continue with Gmail
